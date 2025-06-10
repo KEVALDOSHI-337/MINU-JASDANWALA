@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Minu Jasdanwala Tribute</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Montserrat:wght@400;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: radial-gradient(circle at top left, #001f3f, #001026);
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: linear-gradient(135deg, #004e92, #000428);
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3.5rem;
+      letter-spacing: 2px;
+      animation: glow 3s infinite alternate;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      color: #ffcc00;
+    }
+
+    nav {
+      background: #000;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem 0;
+      border-bottom: 2px solid #ffcc00;
+    }
+
+    nav a {
+      color: #ffcc00;
+      text-decoration: none;
+      font-weight: bold;
+      transition: transform 0.3s;
+    }
+
+    nav a:hover {
+      transform: scale(1.1);
+      color: #fff;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.05);
+      margin-top: 2rem;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+      animation: fadeIn 2s ease;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      border-left: 5px solid #ffcc00;
+      padding-left: 1rem;
+      margin-bottom: 1rem;
+      color: #ffcc00;
+    }
+
+    .quote-box {
+      border-left: 5px solid #00ccff;
+      padding-left: 1rem;
+      margin: 2rem 0;
+      font-style: italic;
+      color: #ccf;
+      background: rgba(0,0,50,0.2);
+      border-radius: 8px;
+      padding: 1rem;
+    }
+
+    .timeline div {
+      margin-bottom: 1rem;
+      padding-left: 1rem;
+      border-left: 3px solid #00aaff;
+    }
+
+    .timeline h4 {
+      color: #00d9ff;
+      margin-bottom: 0.2rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+      transition: transform 0.4s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .video-embed {
+      margin-top: 1rem;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 10px;
+    }
+
+    .contact p {
+      line-height: 1.6;
+      color: #eee;
+    }
+
+    .social-buttons a {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: #ffcc00;
+      color: #000;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .social-buttons a:hover {
+      background: #ffaa00;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #000;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00; }
+      to { text-shadow: 0 0 20px #ffcc00, 0 0 30px #ffaa00; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media screen and (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Minu Jasdanwala</h1>
+  <p>Educator • Author • Social Worker</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#videos">Videos</a>
+  <a href="#timeline">Timeline</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About</h2>
+  <p>Minu Jasdanwala is a well-respected educator and passionate literary figure based in Rajkot, Gujarat. He is the founder of Kafka’s English Corner, guiding students in communication and personality development. He also runs "Minu’s Mehfil", an open mic poetry platform for budding poets and authors. His influence spans literature, education, and social work.</p>
+  <div class="quote-box">"Every student is a spark, and I just help them ignite." – Minu Jasdanwala</div>
+</section>
+
+<section id="gallery">
+  <!-- Place this inside the <body> tag where you want to show it -->
+
+<section id="gallery">
+  <h2>Moments & Memories</h2>
+  <div class="gallery">
+    <div>
+      <img src="https://images.openai.com/thumbnails/31abae962111d245ce79b18f20efe817.jpeg" alt="Cyber-awareness seminar" />
+      <p><strong>Cyber-awareness Seminar:</strong> Minu Jasdanwala addressing students on responsible digital behavior, showing his role in promoting safe internet usage.</p>
+    </div>
+    <div>
+      <img src="https://images.openai.com/thumbnails/09af143df68aee0128f54c960fa1ad8e.jpeg" alt="Student workshop" />
+      <p><strong>Student Workshop:</strong> Engaging session with learners, displaying his energetic teaching and passion for holistic education.</p>
+    </div>
+    <div>
+      <img src="https://images.openai.com/thumbnails/5e10233e9accf16a00451f6695450bf5.jpeg" alt="Motivational speech" />
+      <p><strong>Motivational Speech:</strong> Captured while inspiring youth with a powerful talk, affirming his influence on young minds.</p>
+    </div>
+    <div>
+      <img src="https://images.openai.com/thumbnails/493236c6ad49af9201b2b2135f9a84b6.jpeg" alt="Mission 1000 Bicycle Donation" />
+      <p><strong>Mission 1,000 – Bicycle Donation:</strong> Promoting fitness and social equality through a thoughtful initiative for underprivileged students.</p>
+    </div>
+  </div>
+</section>
+
+<section id="videos">
+  <h2>Inspirational Videos</h2>
+  <div class="video-grid">
+    <div>
+      <iframe src="https://www.youtube.com/embed/C_Go65vHu80" title="Minu's Mission 1000" allowfullscreen></iframe>
+      <p><strong>Mission 1,000:</strong> Minu empowers students by donating bicycles, linking mobility to education and opportunity.</p>
+    </div>
+    <div>
+      <iframe src="https://www.youtube.com/embed/_3WDaM6SuYM" title="Poetry Recitation by Minu" allowfullscreen></iframe>
+      <p><strong>Poetry Recitation:</strong> A soulful performance of Coleridge’s verses that reflects Minu’s deep literary appreciation.</p>
+    </div>
+    <div>
+      <iframe src="https://www.youtube.com/embed/4NjLA1o8CII" title="Civil Hospital Awareness" allowfullscreen></iframe>
+      <p><strong>Hospital Awareness:</strong> A candid and sincere review of Rajkot Civil Hospital conditions, revealing Minu’s social commitment.</p>
+    </div>
+  </div>
+</section>
+
+</section>
+
+
+<section id="timeline">
+  <h2>Achievements Timeline</h2>
+  <div class="timeline">
+    <div><h4>2015:</h4> Founded Kafka's English Corner</div>
+    <div><h4>2017:</h4> Released his first novella</div>
+    <div><h4>2018:</h4> Received National Excellence in Education Award</div>
+    <div><h4>2019:</h4> Published multiple story series on Indian culture</div>
+    <div><h4>2020:</h4> Awarded Gujarat Literature Prize</div>
+    <div><h4>2021:</h4> Hosted 100+ educational seminars</div>
+    <div><h4>2022:</h4> Listed in “Top 50 Influential Indians in Literature”</div>
+    <div><h4>2023:</h4> Set record in National Book of Achievements</div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p><strong>Phone:</strong> +91 92281 91919</p>
+  <p><strong>Email:</strong> kecrecords@gmail.com</p>
+  <p><strong>Facebook:</strong> <a href="https://www.facebook.com/KECrecords/" target="_blank" style="color: #0af;">Kafka's English Corner</a></p>
+  <div class="social-buttons">
+    <a href="https://wa.me/919228191919" target="_blank">WhatsApp</a>
+    <a href="mailto:kecrecords@gmail.com">Email</a>
+  </div>
+</section>
+
+<footer>
+  Made with ❤️ by Keval • Tribute to Minu Jasdanwala
+</footer>
+
+</body>
+</html>
